@@ -1,38 +1,62 @@
-# CCライセンスをえらぶページ やさしい日本語版（非公式）
+# CCライセンスを えらぶページ やさしい日本語版（公式ではありません）
 
-このリポジトリは、Creative Commons License Chooser をもとにした、非公式の「やさしい日本語」版です。
+このページは、**Creative Commons License Chooser** をもとに作りました。
+「やさしい日本語」で書いた、公式ではないページです。
 
-このページは、Creative Commons の公式サイトではありません。
-Creative Commons による承認、保証、法的助言を意味しません。
+このページは、**Creative Commons の公式サイトではありません**。
+Creative Commons が、このページを認めたものではありません。
+Creative Commons が、このページの内容を保証するものでもありません。
+また、このページは法律のアドバイスではありません。
 
 このページでは、むずかしい言葉をできるだけ少なくしています。
-ただし、ライセンス名、条件名、法的に大切な言葉は、誤解を避けるために残すことがあります。
+ただし、次の言葉は大切なので、残すことがあります。
 
-ライセンスの正確な内容は、Creative Commons 公式サイトのコモンズ証とライセンス本文を確認してください。
+* ライセンス名
+* 条件名
+* 法律で大切な言葉
 
-## 公開ページ
+ライセンスの正しい内容は、Creative Commons の公式サイトで確認してください。
+次の2つを確認してください。
 
-- GitHub Pages: ***
+* コモンズ証
+  ＝ ライセンスの内容を、短く説明したページ
+* ライセンス本文
+  ＝ 法律で使う、くわしい文章
 
-## 元プロジェクト
+## 公開しているページ
 
-- Original repository: `creativecommons/chooser`
-- Original project: Creative Commons License Chooser
-- Copyright: Copyright (c) 2019 Creative Commons
-- License: MIT License
+* GitHub Pages：***
 
-## ファイル構成
+## もとのプロジェクト
 
-このフォークでは、GitHub Pagesで公開するファイルとして、ルート直下の `index.html`、`style.css`、`scripts.js` を使用します。
+このページは、次のプロジェクトをもとにしています。
 
-`src/` が残っている場合、それは元リポジトリ由来の控えであり、公開ページの表示には使用していません。
+* もとのリポジトリ：`creativecommons/chooser`
+* もとのプロジェクト：Creative Commons License Chooser
+* 著作権：Copyright (c) 2019 Creative Commons
+* ライセンス：MIT License
 
-## 注意
+## ファイルの説明
 
-Creative Commons、CC、および関連アイコンは Creative Commons の商標です。
+このフォークでは、GitHub Pages で公開するために、次のファイルを使います。
 
-## ライセンス
+* `index.html`
+* `style.css`
+* `scripts.js`
 
-このソフトウェアはMITライセンスの下で配布されています。
+これらのファイルは、リポジトリのいちばん上の場所にあります。
 
-「ライセンス」を参照してください。
+`src/` が残っていることがあります。
+`src/` は、もとのリポジトリから残した控えです。
+公開ページの表示には使っていません。
+
+## 商標について
+
+Creative Commons、CC、関連するアイコンは、Creative Commons の商標です。
+商標とは、名前やマークを守るためのものです。
+
+## このソフトウェアのライセンス
+
+このソフトウェアは、**MIT License** で配布しています。
+
+くわしくは、「LICENSE」または「ライセンス」のファイルを見てください。
