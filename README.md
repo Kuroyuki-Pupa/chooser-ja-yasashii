@@ -1,8 +1,14 @@
-# CC License Chooser 日本語化・平易化フォーク（非公式）
+# CCライセンスをえらぶページ やさしい日本語版（非公式）
 
-本リポジトリは、Creative Commons が公開している `creativecommons/chooser` の非公式日本語化フォークです。
+このリポジトリは、Creative Commons License Chooser をもとにした、非公式の「やさしい日本語」版です。
 
-このプロジェクトは、Creative Commons 公式による提供、承認、保証を意味しません。
+このページは、Creative Commons の公式サイトではありません。
+Creative Commons による承認、保証、法的助言を意味しません。
+
+このページでは、むずかしい言葉をできるだけ少なくしています。
+ただし、ライセンス名、条件名、法的に大切な言葉は、誤解を避けるために残すことがあります。
+
+ライセンスの正確な内容は、Creative Commons 公式サイトのコモンズ証とライセンス本文を確認してください。
 
 ## 公開ページ
 
