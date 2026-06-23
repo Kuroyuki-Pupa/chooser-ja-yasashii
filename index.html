@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>クリエイティブ・コモンズ・ライセンスを選ぶツール</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" media="all" href="style.css">
+
+</head>
+
+<body class="chooser-page">
+<a class="skip-to-content" href="#main-content-marker">コンテンツへスキップ</a>
+
+<header>
+  <div class="masthead">
+    <div class="site-title-group">
+      <h1>
+        <a class="identity-logo product" href="#main-content-marker">
+          クリエイティブ・コモンズ・ライセンスを選ぶツール
+        </a>
+      </h1>
+
+      <p class="site-subtitle">
+        非公式・わかりやすい日本語版
+      </p>
+    </div>
+
+    <nav class="primary-menu" aria-label="主要ナビゲーション">
+      <ul>
+        <li><a href="#chooser">選択フォーム</a></li>
+        <li><a href="#mark-your-work">表示文を生成</a></li>
+        <li><a href="#help">補足説明</a></li>
+      </ul>
+    </nav>
+
+    <nav class="ancillary-menu" aria-label="参考リンク">
+      <ul>
+        <li>
+          <a href="https://creativecommons.org/licenses/" target="_blank" rel="noopener noreferrer">
+            公式ライセンス一覧
+          </a>
+        </li>
+        <li>
+          <a href="https://creativecommons.org/faq/" target="_blank" rel="noopener noreferrer">
+            公式FAQ
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+<main id="main-content-marker" tabindex="-1">
+
+<header>
+  <h1>作品に使うライセンスを選ぶ</h1>
+
+  <p>
+    手順に沿って、作品に合うライセンスを選んでください。<br />
+    このサイトは情報を保存しません。
+  </p>
+</header>
+
+
+<div class="content">
+
+    <form id="chooser">
+
+        <ol>
+         
+        <li>
+        <fieldset id="do-you-know-which-license-you-need">
+            <legend>使うライセンスは決まっていますか？</legend>
+            <!-- <legend>Choose a License</legend> -->
+
+        
+            <div>
+                <input type="radio" id="yes-choose" name="choose" value="yes" checked />
+                <label for="yes-choose">はい</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="no-choose" name="choose" value="no" />
+                <label for="no-choose">いいえ</label>
+            </div>
+<!-- 
+            <div>
+                <input type="radio" id="choose" name="choose" value="choose" />
+                <label for="choose">Choose</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="help" name="help" value="help" />
+                <label for="help">Help me choose</label>
+            </div> -->
+        </fieldset>
+        </li>
+
+        <li>
+        <fieldset id="which-license-do-you-need">
+            <!-- <legend>Choose a License</legend> -->
+            <legend>どのライセンスを使いますか？</legend>
+
+            <label for="tool">ライセンス</label>
+            <select name="tool" id="tool">
+                <option value="noselect" selected>&mdash;ライセンスを選択&mdash;</option>
+                <option value="cc-0">CC0 1.0</option>
+                <option value="cc-by">CC-BY 4.0</option>
+                <option value="cc-by-sa">CC-BY-SA 4.0</option>
+                <option value="cc-by-nd">CC-BY-ND 4.0</option>
+                <option value="cc-by-nc">CC-BY-NC 4.0</option>
+                <option value="cc-by-nc-sa">CC-BY-NC-SA 4.0</option>
+                <option value="cc-by-nc-nd">CC-BY-NC-ND 4.0</option>
+            </select>
+
+            <!-- <p>OR</p>
+
+            <div></div>
+                <input type="checkbox" id="help" name="help" value="help" />
+                <label for="help">Help me choose</label>
+            </div> -->
+
+        </fieldset>
+        </li>
+
+        <li>
+        <fieldset id="require-attribution">
+            <legend>作品を使う人に、あなたの名前などの表示を求めますか？</legend>
+
+            <div>
+                <input type="radio" id="yes-attribution" name="attribution" value="yes" />
+                <label for="yes-attribution">はい</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="no-attribution" name="attribution" value="no" />
+                <label for="no-attribution">いいえ</label>
+            </div>
+
+        </fieldset>
+        </li>
+
+
+        <li>
+        <fieldset id="allow-commercial-use">
+            <legend>ほかの人が、あなたの作品を営利目的で使うことを許可しますか？</legend>
+
+            <div>
+                <input type="radio" id="yes-commercial" name="commercial" value="yes" />
+                <label for="yes-commercial">はい</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="no-commercial" name="commercial" value="no" />
+                <label for="no-commercial">いいえ</label>
+            </div>
+
+        </fieldset>
+        </li>
+
+        <li>
+        <fieldset id="allow-derivatives">
+            <legend>ほかの人が、あなたの作品を編集したり、もとにして新しい作品を作ったりすることを許可しますか？</legend>
+
+            <div>
+                <input type="radio" id="yes-derivatives" name="derivatives" value="yes" />
+                <label for="yes-derivatives">はい</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="no-derivatives" name="derivatives" value="no" />
+                <label for="no-derivatives">いいえ</label>
+            </div>
+
+        </fieldset>
+        </li>
+
+        <li>
+        <fieldset id="share-alike">
+            <legend>あなたの作品をもとに作った作品にも、同じCCライセンスを付けることを求めますか？</legend>
+
+            <div>
+                <input type="radio" id="yes-sharing-requirements" name="sharing-requirements" value="yes" />
+                <label for="yes-sharing-requirements">はい</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="no-sharing-requirements" name="sharing-requirements" value="no" />
+                <label for="no-sharing-requirements">いいえ</label>
+            </div>
+
+        </fieldset>
+        </li>
+
+        <!-- <hr /> -->
+
+        <li>
+        <fieldset id="waive-your-copyright">
+            <legend>著作権を放棄する</legend>
+            <!-- [T]: needs another box here to verify ownership similar to "confirmation" -->
+
+             <div>
+
+              <input type="checkbox" id="waive" name="waive" value="waive" />
+
+              <label for="waive">
+              私は、この作品について、法律で認められる範囲で、次の権利をすべて放棄します。
+              </label>
+
+              <ul>
+               <li>著作権</li>
+               <li>関連権</li>
+               <li>隣接権</li>
+               <li>これらの権利に関する請求権</li>
+               <li>これらの権利について訴える権利</li>
+              </ul>
+
+              </div>
+        
+             <div>
+
+              <input type="checkbox" id="read-elect" name="read-elect" value="read-elect" />
+
+              <label for="read-elect">
+              私は、CC0の条件と、CC0が意図する法的効果を読み、理解しました。<br />
+              そのうえで、この作品にCC0を適用することを、自分の意思で選びます。
+              </label>
+
+              </div>
+
+        </fieldset>
+        </li>
+
+        <li>
+        <fieldset id="confirmation">
+            <legend>CCライセンスの適用が適切であることを確認する</legend>
+
+            <div>
+                <input type="checkbox" id="ownership" name="ownership" value="ownership" />
+                 <label for="ownership">
+                  私は、この作品を所有しています。<br />
+                  または、この作品にライセンスを付ける権限があります。
+                  </label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="read" name="read" value="read" />
+                <label for="read">私は、ライセンスの条件を読み、理解しています。</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="revocation" name="revocation" value="revocation" />
+                <label for="revocation">私は、CCライセンスの適用を取り消せないことを理解しています。</label>
+            </div>
+
+        </fieldset>
+        </li>
+
+        <li class="form-section-start">
+        <fieldset id="attribution-details">
+            <legend>クレジット表示の詳細（任意）</legend>
+
+             <span>
+              ここに入力すると、ほかの人があなたの作品を紹介するときに、あなたの名前などを表示しやすくなります。
+              入力した内容は、機械が読み取るコードにも入ります。
+              </span>
+
+            <div>
+                <label for="title">作品タイトル</label>
+                <input type="text" id="title" name="title" placeholder="無題" />
+            </div>
+
+            <div>
+                <label for="creator">作品のクリエイター</label>
+                <input type="text" id="creator" name="creator" placeholder="山田花子" />
+            </div>
+
+            <div>
+                <label for="work-link">作品へのリンク</label>
+                <input type="url" id="work-link" name="work-link" placeholder="https://example.com" />
+            </div>
+
+            <div>
+                <label for="creator-link">クリエイターのプロフィールへのリンク</label>
+                <input type="url" id="creator-link" name="creator-link" placeholder="https://example.com" />
+            </div>
+
+            <div>
+                <label for="work-creation-year">作成年</label>
+                <input type="text" id="work-creation-year" name="work-creation-year" placeholder="1999" />
+            </div>
+
+            <div id="tool-rec-details">
+
+                <hr />
+
+                <div>
+                    <label for="tool-title">推奨ツールのタイトル（読み取り専用）</label>
+                    <input type="text" id="tool-title" name="tool-title" value="推奨ツールのタイトル" readonly="true" />
+                </div>
+
+                <div>
+                    <label for="tool-url">推奨ツールのURL（読み取り専用）</label>
+                    <input type="text" id="tool-url" name="tool-url" value="https://creativecommons.org/licenses/by/4.0/deed.ja" readonly="true" />
+                </div>
+
+            </div>
+   
+
+        </fieldset>
+        </li>
+
+        </ol>
+    </form>
+
+    <!-- <button>submit</button> -->
+
+    <aside>
+        <div id="empty">
+             <p>必須項目の入力を待っています。</p>
+        </div>
+
+        <div id="tool-recommendation">
+            <h2>推奨される選択肢</h2>
+
+            <article class="tool">
+
+            </article>
+        </div>
+
+        <div id="mark-your-work">
+            <header>
+                <h3>作品に表示を付ける</h3>
+                <p>選んだライセンスに合わせて、作品に付ける表示文を作れます。</p>
+            </header>
+
+            <details class="medium">
+
+            <summary>ウェブサイト</summary>
+
+                 <p>
+                  1つの作品にライセンスや表示を付ける場合は、その作品の横にコードを貼り付けてください。<br />
+                  ページ全体やブログにライセンスや表示を付ける場合は、ページの下部にコードを貼り付けることもできます。
+                  </p>
+
+                <article>
+                    <details class="format" name="website" open>
+                    <summary>リッチテキスト</summary>
+
+                        <p class="rich-text mark">[ここに、文脈に合わせて整えた表示を入れる]</p>
+
+                        <footer>
+                            <div>
+                                <input type="checkbox" id="rich-text-full-name" name="rich-text-full-name" value="rich-text-full-name" />
+                                <label for="rich-text-full-name">ツールの正式な名前</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="rich-text-generic-mark" name="rich-text-generic-mark" value="rich-text-generic-mark" />
+                                <label for="rich-text-generic-mark">作品名・作者名なしで表示</label>
+                            </div>
+                            <button id="copy-rich-text-mark">コピー</button>
+                        </footer>
+                    </details>
+                </article>
+
+                <article>
+                    <details class="format" name="website">
+                    <summary>HTML</summary>
+
+                        <textarea class="html mark" readonly="true">[ここに、文脈に合わせて整えた表示を入れる]</textarea>
+
+                        <footer>
+                            <div>
+                                <input type="checkbox" id="html-full-name" name="html-full-name" value="html-full-name" />
+                                <label for="html-full-name">ツールの正式な名前</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="html-generic-mark" name="html-generic-mark" value="html-generic-mark" />
+                                <label for="html-generic-mark">作品名・作者名なしで表示</label>
+                            </div>
+                            <button id="copy-html-mark">コピー</button>
+                        </footer>
+                    </details>
+                </article>
+
+            </details>
+            
+            <details class="medium">
+             <summary>印刷物またはメディア</summary>
+
+                 <p>
+                  下のテキストをコピーしてください。<br />
+                  印刷物やプレゼンテーションでは、タイトルページや著作権ページに貼り付けてください。<br />
+                  メディアでは、クレジット欄に貼り付けてください。
+                  </p>
+
+                <article>
+                <details class="format" name="print" open>
+                    <summary>プレーンテキスト</summary>
+
+                        <p class="plain-text mark">[ここに、文脈に合わせて整えた表示を入れる]</p>
+
+                        <footer>
+                            <div>
+                                <input type="checkbox" id="plain-text-full-name" name="plain-text-full-name" value="plain-text-full-name" />
+                                <label for="plain-text-full-name">ツールの正式な名前</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="plain-text-generic-mark" name="plain-text-generic-mark" value="plain-text-generic-mark" />
+                                <label for="plain-text-generic-mark">作品名・作者名なしで表示</label>
+                            </div>
+                            <button id="copy-plain-text-mark">コピー</button>
+                        </footer>
+                </details>
+                </article>
+            </details>
+
+        </div>
+
+        <div id="help">
+            <h2>迷っていますか？サポートが必要ですか？</h2>
+
+            <details name="help">
+                <summary>クリエイティブ・コモンズ・ライセンスとは何ですか？</summary>
+                 <p>
+                  クリエイティブ・コモンズ・ライセンスは、作品の利用を一般の人に許可するための法的なツールです。
+                  Creative Commonsの法的ツールには、<a href="https://creativecommons.org/licenses/" target="_blank" rel="noopener noreferrer">6種類のライセンス</a>と<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja" target="_blank" rel="noopener noreferrer">1つのパブリック・ドメイン提供ツール</a>が含まれます。
+                  あなたの資料に、7つの法的ツールのうちどれを使っているかを、はっきり示すことが重要です。
+                  ライセンス選択ツールは、あなたに適したライセンスを決めるのに役立ちます。
+                  </p> 
+                 <p>
+                  CCライセンスは、著作権の対象となるあらゆる種類の作品に適用できます。
+                  CCがライセンスの利用を勧めていない作品は、コンピューターソフトウェアとハードウェアだけです。
+                  これらには、CCライセンスではなく、標準的な自由ソフトウェアライセンスを使うことをCCは勧めています。
+                  すでにパブリック・ドメインにある作品については、<a href="https://creativecommons.org/about/pdm" target="_blank" rel="noopener noreferrer">パブリック・ドメイン・マーク</a>で表示することを推奨しています。
+                  作品の権利を保有しているが、それをパブリック・ドメインに置きたい場合は、選択ツールを使ってCC0を選択できます。
+                  </p>
+            </details>
+
+            <details name="help">
+                <summary>クリエイティブ・コモンズ・ライセンスの適用方法</summary>
+                 <p>
+                  作品に選んだCCライセンスを表示すると、その作品にライセンスを付けられます。
+                  表示は、短いテキストでも、ウェブサイトに貼り付けるHTMLコードでもかまいません。
+                  該当するライセンスへのリンク（例：<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener noreferrer">https://creativecommons.org/licenses/by/4.0/</a>）を含めることを強く推奨します。
+                  </p>
+            </details>
+
+            <details name="help">
+                 <summary>何を考える必要がありますか？</summary>
+                 <p>
+                  作品にライセンスを付ける前に、次のことを確認してください。
+                  </p>
+
+                  <ul>
+
+                  <li><a href="https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Remember_the_license_may_not_be_revoked." target="_blank" rel="noopener noreferrer">一度CCライセンスを適用すると、取り消せないことを覚えておく</a>。</li>
+
+                  <li><a href="https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Think_about_how_you_want_the_material_to_be_used." target="_blank" rel="noopener noreferrer">ほかの人に資料をどのように使ってほしいかを考えて、ライセンスを選ぶ</a>。</li>
+
+                  <li><a href="https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Specify_attribution_information_if_desired." target="_blank" rel="noopener noreferrer">あなたへのクレジットをどのように表示してほしいかを知らせる</a>。</li>
+
+                  <li><a href="https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Specify_attribution_information_if_desired." target="_blank" rel="noopener noreferrer">クレジット表示を望まない場合は、そのことを知らせる</a>。</li>
+
+                  </ul>
+            </details>
+
+            <details name="help">
+                <summary>アイコンは何を意味しますか？</summary>
+                <p> アイコンは、さまざまなCCライセンスの選択肢における主要な特徴を表しています。 </p>
+                <dl class="conditions-definitions">
+                    <div>
+                        <dt class="icon-attach cc-by">表示が必要（BY）</dt>
+                        <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+                    </div>
+            
+                    <div>
+                        <dt class="icon-attach cc-nc">営利目的での利用不可（NC／非営利）</dt>
+                         <dd>
+
+                          あなたの作品は、非営利目的でのみ利用できます。
+
+                          <em>非営利とは、主な目的が商業的な利益や金銭的な報酬ではないことを意味します。</em>
+
+                          </dd>
+                    </div>
+            
+                    <div>
+                        <dt class="icon-attach cc-sa">同じ条件で頒布（SA／継承）</dt>
+                         <dd>翻案物は、元の作品と同じ条件で共有する必要があります。</dd>
+                    </div>
+
+                    <div>
+                        <dt class="icon-attach cc-nd">改変不可（ND／改変禁止）</dt>
+                         <dd>改変した作品を共有したり、配ったりすることはできません。</dd>
+                    </div>
+                </dl>
+            </details>
+
+            <details name="help">
+                <summary>ほかに質問がある場合はどうすればよいですか？</summary>
+                <p>
+                  まず、
+                  <a href="https://creativecommons.org/faq/" target="_blank" rel="noopener noreferrer">
+                    Creative Commonsの公式FAQ
+                  </a>
+                  を確認してください。
+                  ライセンスの内容は、各ライセンスの公式コモンズ証で確認できます。
+                </p>
+                 <p>
+
+                  このサイトは、Creative Commons License Chooser を非公式に日本語化したフォークです。
+
+                  Creative Commons 公式が提供、承認、保証しているものではありません。
+
+                  個別の事案について、法的な助言や公式サポートは行いません。
+
+                  判断に迷う場合は、専門家またはCreative Commonsの公式情報を確認してください。
+
+                  </p>
+            </details>
+
+        </div>
+    </aside>
+
+</div>
+
+</main>
+
+<footer>
+   <a class="identity-logo" href="#main-content-marker">
+
+    クリエイティブ・コモンズ・ライセンスを選ぶツール
+
+    </a>
+
+  <nav class="footer-menu" aria-label="フッターメニュー">
+    <ul>
+      <li>
+        <a href="https://creativecommons.org/licenses/" target="_blank" rel="noopener noreferrer">
+          公式ライセンス一覧
+        </a>
+      </li>
+      <li>
+        <a href="https://creativecommons.org/faq/" target="_blank" rel="noopener noreferrer">
+          公式FAQ
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Kuroyuki-Pupa/chooser-ja" target="_blank" rel="noopener noreferrer">
+          このフォークのリポジトリ
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Kuroyuki-Pupa/chooser-ja/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+          MIT License
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="license">
+     <p>
+
+      このサイトは、Creative Commons License Chooser を非公式に日本語化したフォークです。
+
+      Creative Commons 公式が提供、承認、保証しているものではありません。
+
+      </p>
+
+    <p>
+      原プロジェクト:
+      <a href="https://github.com/creativecommons/chooser" target="_blank" rel="noopener noreferrer">
+        creativecommons/chooser
+      </a>。
+      Copyright (c) 2019 Creative Commons.
+      ソースコードは MIT License に基づき利用・改変しています。
+    </p>
+
+     <p>
+
+      Creative Commons、CC、関連アイコンは、Creative Commons の商標です。
+
+      各ライセンス本文およびコモンズ証の内容は、Creative Commons 公式サイトで確認してください。
+
+      </p>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+
+
+<template id="cc-0" class="tool mark">
+    <header>
+        <h3>CC0 1.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-zero"></use>
+            </svg>
+        </span>
+        <h4>CC0 1.0 全世界</h4>
+    </header>
+
+    <div class="description">
+        <p>作品にCC0パブリック・ドメイン提供の表示を付けることで、クリエイターは著作権を放棄し、再利用者が、営利目的の場合も含め、あらゆる媒体や形式で資料を配布、リミックス、改変し、基にして新たな作品を作ることを許可します。</p>
+    </div>
+
+    <dl class="conditions-definitions">
+        <div>
+            <dt class="icon-attach cc-zero">CC0</dt>
+            <dd>この作品は、パブリック・ドメインに提供されたものとして表示されています。</dd>
+        </div>
+    </dl>
+
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="cc-by" class="tool license">
+    <header>
+        <h3>CC-BY 4.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+        </span>
+        <h4>クリエイティブ・コモンズ 表示 4.0 国際</h4>
+    </header>
+
+    <div class="description">
+         <p>
+          このライセンスでは、再利用する人がクリエイターのクレジットを表示する必要があります。
+          </p>
+
+          <p>
+          再利用する人は、営利目的の場合も含め、どの媒体や形式でも資料を利用できます。
+          できることは、配布、リミックス、改変、元の資料をもとにした新しい作品の作成です。
+          </p>
+    </div>
+
+    <dl class="conditions-definitions">
+        <div>
+            <dt class="icon-attach cc-by">BY</dt>
+            <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+        </div>
+    </dl>
+
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="cc-by-sa" class="tool license">
+    <header>
+        <h3>CC BY-SA 4.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-sa"></use>
+            </svg>
+        </span>
+        <h4>クリエイティブ・コモンズ 表示-継承 4.0 国際</h4>
+    </header>
+
+    <div class="description">
+         <p>
+          このライセンスでは、再利用する人がクリエイターのクレジットを表示する必要があります。
+          </p>
+
+          <p>
+          再利用する人は、営利目的の場合も含め、どの媒体や形式でも資料を利用できます。
+          できることは、配布、リミックス、改変、元の資料をもとにした新しい作品の作成です。
+          </p>
+
+          <p>
+          ほかの人がその資料をリミックス、改変、または元にして新しい作品を作る場合は、その改変後の資料にも同じ条件のライセンスを付ける必要があります。
+          </p>
+    </div>
+
+    <dl class="conditions-definitions">
+        <div>
+            <dt class="icon-attach cc-by">BY</dt>
+            <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-sa">SA</dt>
+             <dd>翻案物は、元の作品と同じ条件で共有する必要があります。</dd>
+        </div>
+    </dl>
+
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="cc-by-nd" class="tool license">
+    <header>
+        <h3>CC BY-ND 4.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-nd"></use>
+            </svg>
+        </span>
+        <h4>クリエイティブ・コモンズ 表示-改変禁止 4.0 国際</h4>
+    </header>
+
+    <div class="description">
+         <p>
+          このライセンスでは、再利用する人がクリエイターのクレジットを表示する必要があります。
+          </p>
+
+          <p>
+          再利用する人は、営利目的の場合も含め、どの媒体や形式でも資料をコピーして配ることができます。
+          ただし、資料を改変せず、そのままの形で使う必要があります。
+          </p>
+    </div>
+
+    <dl class="conditions-definitions">
+
+        <div>
+            <dt class="icon-attach cc-by">BY</dt>
+            <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-nd">ND</dt>
+             <dd>改変した作品を共有したり、配ったりすることはできません。</dd>
+        </div>
+    </dl>
+
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="cc-by-nc" class="tool license">
+    <header>
+        <h3>CC BY-NC 4.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-nc"></use>
+            </svg>
+        </span>
+        <h4>クリエイティブ・コモンズ 表示-非営利 4.0 国際</h4>
+    </header>
+
+    <div class="description">
+         <p>
+          このライセンスでは、再利用する人がクリエイターのクレジットを表示する必要があります。
+          </p>
+
+          <p>
+          再利用する人は、非営利目的に限り、どの媒体や形式でも資料を利用できます。
+          できることは、配布、リミックス、改変、元の資料をもとにした新しい作品の作成です。
+          </p>
+    </div>
+
+    <dl class="conditions-definitions">
+        <div>
+            <dt class="icon-attach cc-by">BY</dt>
+            <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-nc">NC</dt>
+             <dd>
+
+              あなたの作品は、非営利目的でのみ利用できます。
+
+              <em>非営利とは、主な目的が商業的な利益や金銭的な報酬ではないことを意味します。</em>
+
+              </dd>
+        </div>
+
+
+    </dl>
+
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="cc-by-nc-sa" class="tool license">
+    <header>
+        <h3>CC BY-NC-SA 4.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-nc"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-sa"></use>
+            </svg>
+        </span>
+        <h4>クリエイティブ・コモンズ 表示-非営利-継承 4.0 国際</h4>
+    </header>
+
+    <div class="description">
+         <p>
+          このライセンスでは、再利用する人がクリエイターのクレジットを表示する必要があります。
+          </p>
+
+          <p>
+          再利用する人は、非営利目的に限り、どの媒体や形式でも資料を利用できます。
+          できることは、配布、リミックス、改変、元の資料をもとにした新しい作品の作成です。
+          </p>
+
+          <p>
+          ほかの人がその資料を修正または改変する場合は、その改変後の資料にも同じ条件のライセンスを付ける必要があります。
+          </p>
+    </div>
+
+    <dl class="conditions-definitions">
+        <div>
+            <dt class="icon-attach cc-by">BY</dt>
+            <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-nc">NC</dt>
+             <dd>
+
+              あなたの作品は、非営利目的でのみ利用できます。
+
+              <em>非営利とは、主な目的が商業的な利益や金銭的な報酬ではないことを意味します。</em>
+
+              </dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-sa">SA</dt>
+             <dd>翻案物は、元の作品と同じ条件で共有する必要があります。</dd>
+        </div>
+    </dl>
+
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="cc-by-nc-nd" class="tool license">
+    <header>
+        <h3>CC BY-NC-ND 4.0</h3>
+        <span class="tool-icons">
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-by"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-nc"></use>
+            </svg>
+            <svg>
+                <use href="vocabulary/svg/cc/icons/cc-icons.svg#cc-nd"></use>
+            </svg>
+        </span>
+        <h4>クリエイティブ・コモンズ 表示-非営利-改変禁止 4.0 国際</h4>
+    </header>
+
+    <div class="description">
+         <p>
+          このライセンスでは、再利用する人がクリエイターのクレジットを表示する必要があります。
+          </p>
+
+          <p>
+          再利用する人は、非営利目的に限り、どの媒体や形式でも資料をコピーして配ることができます。
+          ただし、資料を改変せず、そのままの形で使う必要があります。
+          </p>
+    </div>
+
+    <dl class="conditions-definitions">
+        <div>
+            <dt class="icon-attach cc-by">BY</dt>
+            <dd>クリエイターであるあなたへのクレジット表示が必要です。</dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-nc">NC</dt>
+             <dd>
+
+              あなたの作品は、非営利目的でのみ利用できます。
+
+              <em>非営利とは、主な目的が商業的な利益や金銭的な報酬ではないことを意味します。</em>
+
+              </dd>
+        </div>
+
+        <div>
+            <dt class="icon-attach cc-nd">ND</dt>
+             <dd>改変した作品を共有したり、配ったりすることはできません。</dd>
+        </div>
+    </dl>
+
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja">コモンズ証を見る</a>
+</template>
+
+<template id="plain-text" class="mark">
+  <p>
+     {{creator}}による「{{title}}」{{copyright}}は、{{toolName}}に{{typeAsVerb}}されています。
+    {{type}}の内容は、{{toolURL}}で確認できます。
+  </p>
+</template>
+
+<template id="plain-text-generic" class="mark">
+  <p>
+    この作品は、{{toolName}}に{{typeAsVerb}}されています。
+    {{type}}の内容は、{{toolURL}}で確認できます。
+  </p>
+</template>
+
+</body>
+</html>
